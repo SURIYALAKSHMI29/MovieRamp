@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Search from './components/search';
+import Search from './components/Search';
 import LoadingSpinner  from './components/LoadingSpinner';
 import MovieCard from './components/MovieCard';
 import Footer from './footer'
