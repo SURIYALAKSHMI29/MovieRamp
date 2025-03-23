@@ -6,7 +6,9 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   server:{
     port: process.env.PORT || 5173,
-    host: '0.0.0.0'
+    host: '0.0.0.0',
+    strictPort: true,
+    allowedHosts: ['movieramp.onrender.com'], 
   },
   plugins: [react()],
 })
