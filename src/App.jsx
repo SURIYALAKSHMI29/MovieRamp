@@ -144,8 +144,8 @@ const App = () => {
 
             {isLoading? (
               <div className="flex flex-col items-center">
+                <LoadingSpinner /> <br/>
                 <p className="text-lg font-medium mb-2 text-yellow-400 animate-pulse">Loading awesome movies… Grab your popcorn! 🍿</p>
-                <LoadingSpinner />
               </div>
             ) : errorMessage?(
                   <p className='text-red-500'>{errorMessage}</p>
