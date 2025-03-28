@@ -10,7 +10,6 @@ import { getTrendingMovies, updateSearchCount } from './appwrite.js';
 const API_BASE_URL = "https://api.themoviedb.org/3";
 
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
-console.log(API_KEY);
 
 const API_OPTIONS = {
   method : 'GET',
@@ -53,7 +52,7 @@ const App = () => {
       const endPoint = query? 
         `${API_BASE_URL}/search/movie?query=${encodeURIComponent(query)}` : 
         `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
-      console.log(`API :`);
+      // console.log(`API :`);
       const response = await fetch(endPoint, API_OPTIONS);
       console.log("Response Status:", response.status);
 
@@ -62,7 +61,7 @@ const App = () => {
       }
       
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
 
       if(data.Response == 'False'){
         setErrorMessage(data.Error || "Failed to fetch movies");
