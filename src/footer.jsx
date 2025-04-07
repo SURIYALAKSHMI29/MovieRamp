@@ -10,7 +10,7 @@ const footer = () => {
       <p className="text-xs mt-1 opacity-80">
             Directed by{" "}
             <a
-                href="https://github.com/yourgithub"
+                href="https://github.com/SURIYALAKSHMI29"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 transition-colors duration-300"
